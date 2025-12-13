@@ -1,3 +1,14 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 .html, body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -69,11 +80,13 @@
    background-color: #ffe6ff;
    padding: 20px;
    border-radius: 15px;
-   max-width: 500px;
-   display: block;
+   flex: 1;
+   display: flex;
+   gap: 1rem;
+   width: 100%;
    flex-direction: column;
    box-shadow: 0 4px 10px rgba(0, 0,0, 1);
-   margin-left: 20px;
+   margin: 0;
  }
 
  .PP {
@@ -120,7 +133,9 @@
    box-sizing: border-box;
    box-shadow: 0 4px 10px rgba(0, 0,0, 1);
 }
-    
+    .Nutrient-head {
+      padding: 1rem;
+    }
     /* Media Queries*/ 
 
  /* for mobile devices*/
@@ -142,6 +157,11 @@
   }
 }
 
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
 /* for ipad, Tablets */
 
 @media (min-width: 481px) and ( max-width: 768px) {
